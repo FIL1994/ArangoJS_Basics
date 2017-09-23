@@ -37,6 +37,9 @@ module.exports = {
   },
   selectAll: async (collection) => {
     return await collection.all();
+  },
+  query: async (db, query) => {
+    return await db.query(query);
   }
 
 };
